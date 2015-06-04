@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Popup</title>
+		<style>
+			html, body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				background: #eee;
+				color: #333;
+			}
+			
+			.header {
+				width: 100%;
+				background: #333;
+				color: #eee;
+				left: 0;
+				top: 0;
+				font-size: 15px;
+				line-height: 15px;
+				padding: 5px;
+			}
+			
+			#url {
+				font-style: italic;
+			}
+			
+			#robots {
+				padding: 5px;
+				font-size: 12px;
+				margin-bottom: 10px;
+			}
+			
+			.footer {
+				height: 10px;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				font-size: 9px;
+			}
+			
+			.Allow {
+				color: #3a7b34;
+			}
+			
+			.Disallow {
+				color: #993434;
+			}
+			
+		</style>
+		<script src="popup.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			Results for "<span id="url"></span>"
+		</div>
+		<pre id="robots"></pre>
+		<div class="footer">RobotSpy by
+			<a target="__blank" href="http://flxn.de">Felix Stein</a>
+		</div>
+	</body>
+
+</html>
